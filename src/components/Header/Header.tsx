@@ -2,10 +2,9 @@ import React, {useState} from 'react';
 import styled, {css} from "styled-components";
 
 export const Header = () => {
-  const [burgerActive, setBurgerActive] = useState<boolean>(false);
+  const [rwdActive, setRwdActive] = useState<boolean>(false);
   const burgerOnClick = () => {
-    setBurgerActive(!burgerActive);
-    console.log(burgerActive);
+    setRwdActive(!rwdActive);
   }
   return (
     <HeaderStyled>
@@ -16,7 +15,7 @@ export const Header = () => {
             <img src="https://via.placeholder.com/40x40" alt="Logo"/>
           </LogoStyled>
 
-          <MenuStyled>
+          <MenuStyled activen={rwdActive ? 'true' : 'false'}>
             <MenuItemStyled>Home</MenuItemStyled>
             <MenuItemStyled>About</MenuItemStyled>
             <MenuItemStyled>Service</MenuItemStyled>
@@ -26,7 +25,7 @@ export const Header = () => {
             <MenuItemStyled>Contact</MenuItemStyled>
           </MenuStyled>
 
-          <BurgerStyled activeb={burgerActive ? 'true' : 'false'}
+          <BurgerStyled activeb={rwdActive ? 'true' : 'false'}
                         onClick={burgerOnClick}
           >
             <div></div>
@@ -45,6 +44,7 @@ const HeaderStyled = styled.header`
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
 
   background: rgba(255, 20, 40, .3);
 `
@@ -62,17 +62,47 @@ const MainNavStyled = styled.div`
 `
 const LogoStyled = styled.a`
   cursor: pointer;
+  position: relative;
+  z-index: 50;
 `
-const MenuStyled = styled.nav`
+interface MenuStyledProps {
+  activen: 'true' | 'false';
+}
+const MenuStyled = styled.nav<MenuStyledProps>`
   display: flex;
   gap: 40px;
 
   @media (max-width: 768px) {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: absolute;
+    background: #000;
+    width: 100%;
+    left: 150%;
+    top: 0;
+    z-index: 40;
+    align-items: center;
+    justify-content: center;
+    
+    transition: .2s ease-in-out all;
+    
+    ${({activen}) =>
+            activen === 'true' &&
+            css`
+              left: 0;
+            `}
+    
   }
 `
 const MenuItemStyled = styled.a`
   cursor: pointer;
+  
+  @media(max-width: 768px) {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+  }
 `
 
 interface BurgerStyledProps {
@@ -82,6 +112,8 @@ interface BurgerStyledProps {
 const BurgerStyled = styled.div<BurgerStyledProps>`
   cursor: pointer;
   display: none;
+  position: relative;
+  z-index: 50;
 
   & div:first-of-type {
     width: 21px;
