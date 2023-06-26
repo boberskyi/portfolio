@@ -1,5 +1,16 @@
+import styled from "styled-components";
+import {ContainerStyled} from "../../App";
+
 export const Experience = () => {
     return (
-        <div>Experience</div>
+        <ExperienceStyled>
+            <ContainerStyled>
+                Experience block
+            </ContainerStyled>
+        </ExperienceStyled>
     )
 }
+
+const ExperienceStyled = styled.div`
+  padding-top: 150px;
+`

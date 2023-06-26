@@ -1,5 +1,16 @@
+import styled from "styled-components";
+import {ContainerStyled} from "../../App";
+
 export const Portfolio = () => {
     return (
-        <div>Portfolio</div>
+        <PortfolioStyled>
+            <ContainerStyled>
+                Portfolio block
+            </ContainerStyled>
+        </PortfolioStyled>
     )
 }
+
+const PortfolioStyled = styled.div`
+  padding-top: 150px;
+`

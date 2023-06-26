@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import styled, {css} from "styled-components";
+import {ContainerStyled} from "../../App";
 
 export const Header = () => {
   const [rwdActive, setRwdActive] = useState<boolean>(false);
@@ -47,12 +48,6 @@ const HeaderStyled = styled.header`
   z-index: 100;
 
   background: rgba(255, 20, 40, .3);
-`
-const ContainerStyled = styled.div`
-  max-width: 1440px;
-  width: 100%;
-  padding: 0 20px;
-  margin: 0 auto;
 `
 const MainNavStyled = styled.div`
   display: flex;
