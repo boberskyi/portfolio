@@ -36,7 +36,7 @@ export const TopBlock = () => {
                     </TopBLockBtnStyled>
                 </TopBlockContentStyled>
 
-                <TopBlockBgStyled></TopBlockBgStyled>
+                {/*<TopBlockBgStyled></TopBlockBgStyled>*/}
             </ContainerStyled>
         </TopBlockStyled>
     )
@@ -44,7 +44,6 @@ export const TopBlock = () => {
 
 const TopBlockStyled = styled.div`
   position: relative;
-  padding-top: 250px;
   height: 100vh;
   display: flex;
   align-items: center;
