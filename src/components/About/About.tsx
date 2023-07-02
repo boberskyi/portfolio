@@ -1,10 +1,11 @@
 import React from "react";
 import {
+    BlockT1Styled, BlockT2Styled, BlockT3Styled,
     ButtonBgItmStyled,
     ButtonBgStyled, ButtonBgTextStyled, ButtonBtmBorderStyled,
     ButtonStyled,
     ButtonTopBorderStyled,
-    ContainerStyled,
+    ContainerStyled, SectionStyled,
     Text1Styled,
     Text2Styled,
     Text3Styled
@@ -13,18 +14,18 @@ import styled from "styled-components";
 
 export const About = () => {
     return (
-        <AboutStyled>
+        <SectionStyled bg="rebeccapurple">
             <ContainerStyled>
                 <AboutContentStyled>
-                    <AboutT1Styled>
+                    <BlockT1Styled>
                         <Text1Styled>Desire to Help Businesses Succeed</Text1Styled>
-                    </AboutT1Styled>
-                    <AboutT2Styled>
+                    </BlockT1Styled>
+                    <BlockT2Styled>
                         <Text2Styled>I HAVE A PASSION FOR <br/> BUILDING WEBSITES / APPS.</Text2Styled>
-                    </AboutT2Styled>
-                    <AboutT3Styled>
+                    </BlockT2Styled>
+                    <BlockT3Styled>
                         <Text3Styled>More than 6 Years of Web Development Experience.</Text3Styled>
-                    </AboutT3Styled>
+                    </BlockT3Styled>
                     <AboutBtnStyled>
                         <ButtonStyled>
                             <ButtonTopBorderStyled></ButtonTopBorderStyled>
@@ -39,29 +40,12 @@ export const About = () => {
                     {/*<AboutBlockBgStyled></AboutBlockBgStyled>*/}
                 </AboutContentStyled>
             </ContainerStyled>
-        </AboutStyled>
+        </SectionStyled>
     )
 }
 
-const AboutStyled = styled.div`
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  background: rebeccapurple;
-  position: relative;
-  z-index: 10;
-`
 const AboutContentStyled = styled.div`
   
-`
-const AboutT1Styled = styled.div`
-  margin-bottom: 15px;
-`
-const AboutT2Styled = styled.div`
-  margin-bottom: 40px;
-`
-const AboutT3Styled = styled.div`
-  margin-bottom: 80px;
 `
 const AboutBtnStyled = styled.div`
   
