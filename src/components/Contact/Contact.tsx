@@ -1,30 +1,28 @@
 import styled from "styled-components";
-import {ContainerStyled} from "../../App";
+import {ContainerStyled, SectionStyled} from "../../App";
 
 export const Contact = () => {
     return (
-        <ContactStyled>
+        <SectionStyled bg="#000">
             <ContainerStyled>
                 <ContactContentStyled>
                     <ContactQuestionStyled>Got a Project? <br/> Let's work together</ContactQuestionStyled>
                     <ContactMailStyled>boberskyibohdan@gmail.com</ContactMailStyled>
                 </ContactContentStyled>
             </ContainerStyled>
-        </ContactStyled>
+        </SectionStyled>
     )
 }
 
-const ContactStyled = styled.div`
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  background: #000;
-`
 const ContactContentStyled = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 40px;
+  
+  @media(max-width: 768px) {
+    gap: 30px;
+  }
 `
 const ContactQuestionStyled = styled.div`
   font-family: 'Oswald', sans-serif;
@@ -33,10 +31,18 @@ const ContactQuestionStyled = styled.div`
   font-weight: 700;
   color: #fff;
   text-align: center;
+
+  @media(max-width: 768px) {
+    font-size: 40px;
+  }
 `
 const ContactMailStyled = styled.a`
   font-family: 'Oswald', sans-serif;
   font-size: 36px;
   color: #fff;
   text-align: center;
+
+  @media(max-width: 768px) {
+    font-size: 20px;
+  }
 `
