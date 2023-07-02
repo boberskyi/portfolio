@@ -119,12 +119,12 @@ const ExperienceColumnH3Styled = styled.div`
   font-size: 32px;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: Oswald, sans-serif
+  font-family: 'Oswald', sans-serif;
 `
 const ExperienceColumnTitleStyled = styled.div`
   font-size: 17px;
   font-weight: 700;
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 20px;

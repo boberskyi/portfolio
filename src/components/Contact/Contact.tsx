@@ -27,7 +27,7 @@ const ContactContentStyled = styled.div`
   gap: 40px;
 `
 const ContactQuestionStyled = styled.div`
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 72px;
   line-height: 1.25;
   font-weight: 700;
@@ -35,7 +35,7 @@ const ContactQuestionStyled = styled.div`
   text-align: center;
 `
 const ContactMailStyled = styled.a`
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 36px;
   color: #fff;
   text-align: center;

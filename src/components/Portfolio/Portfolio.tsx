@@ -85,7 +85,7 @@ const PortfolioSectionH3Styled = styled.div`
   display: flex;
   align-items: center;
   gap: 20px;
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 33px;
   font-weight: 700;
   text-transform: uppercase;
@@ -110,7 +110,7 @@ const PortfolioItemPreviewStyled = styled.div`
 `
 const PortfolioItemTitleStyled = styled.div`
   font-size: 15px;
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: #fff;
   margin-top: 15px;
   margin-bottom: 5px;
@@ -119,7 +119,7 @@ const PortfolioItemTitleStyled = styled.div`
 const PortfolioItemTagsStyled = styled.div`
   color: rgba(255,255,255,.6);
   font-size: 9px;
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
 `
 const PortfolioWrapStyled = styled.div`
   display: flex;

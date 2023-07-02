@@ -35,14 +35,14 @@ export const ContainerStyled = styled.div`
 `
 
 export const Text1Styled = styled.p`
-  font-family: Oswald,sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: #ff6c2c;
   font-size: 28px;
   line-height: 1;
   font-weight: 500;
 `
 export const Text2Styled = styled.h2`
-  font-family: Oswald,sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 72px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -50,7 +50,7 @@ export const Text2Styled = styled.h2`
   color: #fff;
 `
 export const Text3Styled = styled.p`
-  font-family: Oswald,sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: rgba(255,255,255,.8);
   font-size: 24px;
   line-height: 1.25;
@@ -106,7 +106,7 @@ export const ButtonBgStyled = styled.div`
 export const ButtonBgTextStyled = styled.div`
   color: rgb(6, 17, 29);
   font-size: 24px;
-  font-family: Oswald,sans-serif;
+  font-family: 'Oswald', sans-serif;
 `
 export const ButtonBgItmStyled = styled.div`
   position: absolute;

@@ -223,7 +223,7 @@ const CalculatorTitleStyled = styled.div`
   font-size: 54px;
   color: #fff;
   font-weight: 700;
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
 `
 const CalculatorWrapStyled = styled.div`
@@ -248,7 +248,7 @@ const CalculatorInnerH3Styled = styled.div`
   color: #fff;
   padding-bottom: 5px;
   font-size: 23px;
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -269,7 +269,7 @@ const CalculatorQuestionStyled = styled.div`
   align-items: center;
 `
 const CalculatorQuestionTextStyled = styled.label`
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 20px;
   color: #fff;
 `
@@ -315,7 +315,7 @@ const CalculatorTypeImgStyle = styled.div<CalculatorTypeImgStyleProps>`
 `
 const CalculatorTypeTxtStyle = styled.div`
   color: #fff;
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 10px;
 `
 const CalculatorInnerHalfStyled = styled.div`
@@ -339,7 +339,7 @@ const CalculatorRangeOptionsStyled = styled.div`
 `
 const CalculatorRangeOptionStyled = styled.div`
   color: #fff;
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 10px;
 `
 const CalculatorRangeStyled = styled.input`
@@ -356,7 +356,7 @@ const CalculatorFormInputStyled = styled.input`
   font-size: 14px;
   color: #fff;
   background: rgba(217, 217, 217, .1);
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
 `
 const CalculatorResultStyled = styled.div`
   position: relative;
@@ -369,7 +369,7 @@ const CalculatorResultWrapperStyled = styled.div`
 `
 const CalculatorResultH3Styled = styled.div`
   margin-bottom: 10px;
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 23px;
   font-weight: 700;
 `
@@ -384,7 +384,7 @@ const CalculatorResultItmTitleStyled = styled.div`
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 5px;
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
 `
 const CalculatorResultItmInputStyled = styled.input`
   background-color: rgb(30,40,51);
@@ -394,5 +394,5 @@ const CalculatorResultItmInputStyled = styled.input`
   font-weight: 700;
   width: 100%;
   padding: 10px 20px;
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
 `

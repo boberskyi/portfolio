@@ -115,7 +115,7 @@ const MenuItemStyled = styled.a`
   cursor: pointer;
   color: #fff;
   font-size: 15px;
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
 
   @media (max-width: 768px) {
     color: #fff;

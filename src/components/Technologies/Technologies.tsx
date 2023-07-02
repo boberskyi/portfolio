@@ -202,7 +202,7 @@ const TechnologiesCardH3Styled = styled.div`
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
 `
 const TechnologiesCardDescriptionStyled = styled.div`
   font-size: 14px;
@@ -213,7 +213,7 @@ const TechnologiesCardToolsTitleStyled = styled.div`
   margin-top: 35px;
   margin-bottom: 10px;
   font-size: 14px;
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
