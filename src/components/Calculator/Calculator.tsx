@@ -5,7 +5,7 @@ import {
     ButtonBgTextStyled,
     ButtonBtmBorderStyled, ButtonStyled,
     ButtonTopBorderStyled,
-    ContainerStyled
+    ContainerStyled, SectionStyled
 } from "../../App";
 import landing_img from "../../landing.jpg";
 import multipage_img from "../../multipage.jpg";
@@ -16,7 +16,7 @@ import app_img from "../../app.jpg";
 
 export const Calculator = () => {
     return (
-        <CalculatorStyled>
+        <SectionStyled bg="#07121e">
             <ContainerStyled>
                 <CalculatorContentStyled>
                     <CalculatorTitleStyled>PROJECT COST & TIME CALCULATOR</CalculatorTitleStyled>
@@ -204,14 +204,10 @@ export const Calculator = () => {
                     </CalculatorWrapStyled>
                 </CalculatorContentStyled>
             </ContainerStyled>
-        </CalculatorStyled>
+        </SectionStyled>
     )
 }
 
-const CalculatorStyled = styled.div`
-  padding: 150px 0;
-  background: #07121e;
-`
 const CalculatorContentStyled = styled.div`
   display: flex;
   flex-direction: column;
@@ -225,23 +221,44 @@ const CalculatorTitleStyled = styled.div`
   font-weight: 700;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
+  
+  @media(max-width: 1400px) {
+    margin-bottom: 35px;
+    font-size: 33px;
+  }
 `
 const CalculatorWrapStyled = styled.div`
   display: flex;
   gap: 30px;
+  
+  @media(max-width: 1200px) {
+    flex-direction: column;
+  }
 `
 const CalculatorLeftStyled = styled.div`
   width: 65%;
   display: flex;
   flex-direction: column;
   gap: 25px;
+
+  @media(max-width: 1200px) {
+    width: 100%;
+  }
 `
 const CalculatorRightStyled = styled.div`
   width: 35%;
+
+  @media(max-width: 1200px) {
+    width: 100%;
+  }
 `
 const CalculatorInnerStyled = styled.div`
   background: rgba(255, 255, 255, .2);
   padding: 60px 50px;
+  
+  @media(max-width: 1024px) {
+    padding: 25px 15px;
+  }
 `
 const CalculatorInnerH3Styled = styled.div`
   position: relative;
@@ -282,6 +299,8 @@ const CalculatorTypesStyle = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+  
+  justify-content: center;
 `
 
 interface CalculatorTypeItmProps {
@@ -321,6 +340,10 @@ const CalculatorTypeTxtStyle = styled.div`
 const CalculatorInnerHalfStyled = styled.div`
   display: flex;
   gap: 60px;
+  
+  @media(max-width: 768px) {
+    flex-direction: column;
+  }
 `
 const CalculatorInnerLeftStyled = styled.div`
   width: 100%;
@@ -348,6 +371,10 @@ const CalculatorRangeStyled = styled.input`
 const CalculatorFormStyled = styled.form`
   display: flex;
   gap: 20px;
+  
+  @media(max-width: 768px) {
+    flex-direction: column;
+  }
 `
 const CalculatorFormInputStyled = styled.input`
   padding: 10px;
