@@ -231,13 +231,13 @@ const CalculatorWrapStyled = styled.div`
   gap: 30px;
 `
 const CalculatorLeftStyled = styled.div`
-  width: 70%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   gap: 25px;
 `
 const CalculatorRightStyled = styled.div`
-  width: 30%;
+  width: 35%;
 `
 const CalculatorInnerStyled = styled.div`
   background: rgba(255, 255, 255, .2);
