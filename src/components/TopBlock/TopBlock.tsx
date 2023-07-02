@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import {
+    BlockT1Styled, BlockT2Styled, BlockT3Styled,
     ButtonBgItmStyled,
     ButtonBgStyled,
     ButtonBgTextStyled, ButtonBtmBorderStyled,
     ButtonStyled, ButtonTopBorderStyled,
-    ContainerStyled,
+    ContainerStyled, SectionStyled,
     Text1Styled,
     Text2Styled,
     Text3Styled
@@ -12,18 +13,18 @@ import {
 
 export const TopBlock = () => {
     return (
-        <TopBlockStyled>
+        <SectionStyled bg="rgba(0, 0, 100, .9)">
             <ContainerStyled>
                 <TopBlockContentStyled>
-                    <TopBLockT1Styled>
+                    <BlockT1Styled>
                         <Text1Styled>Hello, My name is Bohdan Boberskyi, I can help you with:</Text1Styled>
-                    </TopBLockT1Styled>
-                    <TopBLockT2Styled>
+                    </BlockT1Styled>
+                    <BlockT2Styled>
                         <Text2Styled>BUILDING A WEBSITE / APPLICATION<br/> TO PROMOTE YOUR BUSINESS.</Text2Styled>
-                    </TopBLockT2Styled>
-                    <TopBLockT3Styled>
+                    </BlockT2Styled>
+                    <BlockT3Styled>
                         <Text3Styled>My mission is to help you create a high quality product.</Text3Styled>
-                    </TopBLockT3Styled>
+                    </BlockT3Styled>
                     <TopBLockBtnStyled>
                         <ButtonStyled>
                             <ButtonTopBorderStyled></ButtonTopBorderStyled>
@@ -38,23 +39,10 @@ export const TopBlock = () => {
 
                 {/*<TopBlockBgStyled></TopBlockBgStyled>*/}
             </ContainerStyled>
-        </TopBlockStyled>
+        </SectionStyled>
     )
 }
 
-const TopBlockStyled = styled.div`
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  background: rgba(0, 0, 100, .9);
-`
-const TopBLockT1Styled = styled.div`
-  margin-bottom: 15px;
-`
-const TopBLockT2Styled = styled.div`
-  margin-bottom: 40px;
-`
 const TopBLockT3Styled = styled.div`
   margin-bottom: 80px;
 `
