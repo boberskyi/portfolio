@@ -27,6 +27,27 @@ function App() {
 
 export default App;
 
+interface SectionProps {
+    bg: string
+}
+export const SectionStyled = styled.div<SectionProps>`
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: ${props => props.bg};
+  z-index: 10;
+  padding: 150px 0;
+  
+  @media(max-width: 1400px) {
+    padding: 100px 0;
+  }
+
+  @media(max-width: 1024px) {
+    padding: 80px 0;
+  }
+`
+
 export const ContainerStyled = styled.div`
   max-width: 1440px;
   width: 100%;
@@ -34,12 +55,29 @@ export const ContainerStyled = styled.div`
   margin: 0 auto;
 `
 
+export const BlockT1Styled = styled.div`
+  margin-bottom: 15px;
+  @media(max-width: 1400px) {
+    margin-bottom: 10px;
+  }
+`
 export const Text1Styled = styled.p`
   font-family: 'Oswald', sans-serif;
   color: #ff6c2c;
   font-size: 28px;
   line-height: 1;
   font-weight: 500;
+  
+  @media(max-width: 1400px) {
+    font-size: 18px;
+  }
+`
+export const BlockT2Styled = styled.div`
+  margin-bottom: 40px;
+  
+  @media(max-width: 1400px) {
+    margin-bottom: 20px;
+  }
 `
 export const Text2Styled = styled.h2`
   font-family: 'Oswald', sans-serif;
@@ -48,6 +86,19 @@ export const Text2Styled = styled.h2`
   text-transform: uppercase;
   font-weight: 700;
   color: #fff;
+  
+  @media(max-width: 1400px) {
+    font-size: 45px;
+  }
+  @media(max-width: 1024px) {
+    font-size: 30px;
+  }
+`
+export const BlockT3Styled = styled.div`
+  margin-bottom: 80px;
+  @media(max-width: 1400px) {
+    margin-bottom: 40px;
+  }
 `
 export const Text3Styled = styled.p`
   font-family: 'Oswald', sans-serif;
@@ -55,6 +106,10 @@ export const Text3Styled = styled.p`
   font-size: 24px;
   line-height: 1.25;
   font-weight: 300;
+
+  @media(max-width: 1400px) {
+    font-size: 13px;
+  }
 `
 export const ButtonStyled = styled.a`
   position: relative;
@@ -78,6 +133,11 @@ export const ButtonStyled = styled.a`
   font-weight: 700;
   text-decoration: none;
   text-transform: none;
+  
+  @media(max-width: 1400px) {
+    width: 150px;
+    height: 50px;
+  }
 `
 export const ButtonBgStyled = styled.div`
   -webkit-clip-path: polygon(0% 0, 100% 0, 100% 91%, 98% 100%, 0 100%);
@@ -102,11 +162,19 @@ export const ButtonBgStyled = styled.div`
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+
+  @media(max-width: 1400px) {
+    height: 50px;
+  }
 `
 export const ButtonBgTextStyled = styled.div`
   color: rgb(6, 17, 29);
   font-size: 24px;
   font-family: 'Oswald', sans-serif;
+  
+  @media(max-width: 1400px) {
+    font-size: 20px;
+  }
 `
 export const ButtonBgItmStyled = styled.div`
   position: absolute;
@@ -133,6 +201,10 @@ export const ButtonTopBorderStyled = styled.div`
   border-top: 1px solid hsla(0,0%,100%,.5);
   border-right: 1px solid hsla(0,0%,100%,.5);
   border-left: 1px solid hsla(0,0%,100%,.5);
+
+  @media(max-width: 1400px) {
+    height: 25px;
+  }
 `
 export const ButtonBtmBorderStyled = styled.div`
   position: absolute;
@@ -147,4 +219,8 @@ export const ButtonBtmBorderStyled = styled.div`
   border-right: 1px solid hsla(0,0%,100%,.5);
   border-bottom: 1px solid hsla(0,0%,100%,.5);
   border-left: 1px solid hsla(0,0%,100%,.5);
+
+  @media(max-width: 1400px) {
+    height: 25px;
+  }
 `
