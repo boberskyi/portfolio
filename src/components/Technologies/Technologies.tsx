@@ -1,4 +1,4 @@
-import {ContainerStyled} from "../../App";
+import {ContainerStyled, SectionStyled} from "../../App";
 import styled from "styled-components";
 import modX from "../../modx.png";
 import wp from "../../wp.png";
@@ -12,7 +12,7 @@ import ts from "../../ts.png";
 
 export const Technologies = () => {
     return (
-        <TechnologiesStyled>
+        <SectionStyled bg="rgb(200, 150, 200)">
             <ContainerStyled>
                 <TechnologiesContentStyled>
 
@@ -140,23 +140,20 @@ export const Technologies = () => {
 
                 </TechnologiesContentStyled>
             </ContainerStyled>
-        </TechnologiesStyled>
+        </SectionStyled>
     )
 }
 
-const TechnologiesStyled = styled.div`
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  background: rgb(200, 150, 200);
-  position: relative;
-  z-index: 10;
-`
+
 const TechnologiesContentStyled = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 50px;
+  
+  @media(max-width: 1024px) {
+    flex-direction: column;
+  }
 `
 const TechnologiesCardStyled = styled.div`
   position: relative;
