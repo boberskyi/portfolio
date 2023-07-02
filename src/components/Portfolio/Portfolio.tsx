@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import {ContainerStyled} from "../../App";
+import {ContainerStyled, SectionStyled} from "../../App";
 
 export const Portfolio = () => {
     return (
-        <PortfolioStyled>
+        <SectionStyled bg="#339979">
             <ContainerStyled>
                 <PortfolioContentStyled>
 
@@ -59,16 +59,10 @@ export const Portfolio = () => {
 
                 </PortfolioContentStyled>
             </ContainerStyled>
-        </PortfolioStyled>
+        </SectionStyled>
     )
 }
 
-const PortfolioStyled = styled.div`
-  padding: 100px 0;
-  background: #339979;
-  display: flex;
-  align-items: center;
-`
 const PortfolioContentStyled = styled.div`
   display: flex;
   flex-direction: column;
@@ -89,6 +83,10 @@ const PortfolioSectionH3Styled = styled.div`
   font-size: 33px;
   font-weight: 700;
   text-transform: uppercase;
+  
+  @media(max-width: 1024px) {
+    margin-bottom: 35px;
+  }
 
   span {
     color: #ff6c2c;
@@ -97,8 +95,21 @@ const PortfolioSectionH3Styled = styled.div`
 `
 const PortfolioItemStyled = styled.div`
   width: 100%;
-  min-width: 30%;
-  max-width: 30%;
+  min-width: 23%;
+  max-width: 23%;
+  
+  @media(max-width: 1400px) {
+    min-width: 30%;
+    max-width: 30%;
+  }
+  @media(max-width: 1024px) {
+    min-width: 48%;
+    max-width: 48%;
+  }
+  @media (max-width: 768px) {
+    min-width: 100%;
+    max-width: 100%;
+  }
 `
 const PortfolioItemPreviewStyled = styled.div`
   width: 100%;
@@ -127,5 +138,13 @@ const PortfolioWrapStyled = styled.div`
   justify-content: center;
   gap: 30px;
   margin-bottom: 100px;
+  
+  @media(max-width: 1400px) {
+    margin-bottom: 70px;
+  }
+  
+  @media(max-width: 1024px) {
+    margin-bottom: 50px;
+  }
 `
 
