@@ -5,7 +5,7 @@ export const Contact = () => {
     return (
         <ContactStyled>
             <ContainerStyled>
-                Contact block
+                <ContactContentStyled></ContactContentStyled>
             </ContainerStyled>
         </ContactStyled>
     )
@@ -13,4 +13,7 @@ export const Contact = () => {
 
 const ContactStyled = styled.div`
   padding-top: 150px;
+`
+const ContactContentStyled = styled.div`
+  
 `
