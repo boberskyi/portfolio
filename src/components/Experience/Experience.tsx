@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import {ContainerStyled} from "../../App";
+import {ContainerStyled, SectionStyled} from "../../App";
 
 export const Experience = () => {
     return (
-        <ExperienceStyled>
+        <SectionStyled bg="#07121e">
             <ContainerStyled>
                 <ExperienceContentStyled>
 
@@ -93,20 +93,20 @@ export const Experience = () => {
 
                 </ExperienceContentStyled>
             </ContainerStyled>
-        </ExperienceStyled>
+        </SectionStyled>
     )
 }
 
-const ExperienceStyled = styled.div`
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  background: #07121e;
-`
 const ExperienceContentStyled = styled.div`
   display: flex;
   justify-content: center;
   gap: 100px;
+  
+  @media(max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 `
 const ExperienceColumnStyled = styled.div`
   max-width: 250px;
@@ -120,6 +120,10 @@ const ExperienceColumnH3Styled = styled.div`
   text-transform: uppercase;
   font-weight: 700;
   font-family: 'Oswald', sans-serif;
+  
+  @media(max-width: 1024px) {
+    margin-bottom: 10px;
+  }
 `
 const ExperienceColumnTitleStyled = styled.div`
   font-size: 17px;
